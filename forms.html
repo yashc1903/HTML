@@ -1,12 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>basic html </title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ADMISSION FORM</title>
+  <style>
+    *{
+      color: rgb(255, 149, 0);
+      margin: 10px;
+    }
+  </style>
 </head>
-<body>
-    <h1>basicccn</h1>
-    <p><abbr title="World Health Organization">WHO🧑🏻</abbr> is an important organization.</p>
+<body  style="background-image:url(images/form.webp) ;  ">
+  <h1 style="text-align:center"><em>ADMISSION FORM</em> </h1>
+  <hr>
+  <form  action="/action_page.php">
+
+    <h2>courses applied for : </h2>
+    <input type="checkbox" id="pcourse" name="course">
+      <label for="pcourse">FULLSTACK PYTHON</label>
+      <br>
+      <input type="checkbox" id="jcourse" name="course">
+      <label for="jcourse">FULLSTACK JAVA</label>
+      <br>
+      <input type="checkbox" id="acourse" name="course">
+      <label for="acourse">AWS</label>
+      <br>
+      <input type="checkbox" id="scourse" name="course">
+      <label for="scourse">SELENIUM</label>
+      <hr>
+
+    <br>
+    <label for="fname">APPLICANT NAME :</label>
+    <input type="text"  id ="fname " value="" placeholder="FIRST"  required>
+    <input type="text"  id ="fname " value="" placeholder="MIDDLE" >
+    <input type="text" id="lname" placeholder="LAST" required><br><br>
+
+
+    <label for="faname">FATHER'S NAME :</label>
+    <input type="text"  id ="fname " value="" placeholder="FIRST" required>
+    <input type="text"  id ="fname " value="" placeholder="MIDDLE" >
+    <input type="text" id="lname" placeholder="LAST" required><br><br>
+    <label >GENDER :</label>
+    <input type="radio" id ="Mgender" name="GENDER"><label for="Mgender">MALE</label>
+    <input type="radio" id ="Fgender" name="GENDER"><label for="Fgender">FEMALE</label>
+    <input type="radio" id ="Ogender" name="GENDER"><label for="Ogender">OTHERS</label>
+    <br><br>
+    <label for="DOB"> DATE OF BIRTH</label>
+    <input type="date" id="DOB" placeholder="11/02/2002" required><br><br>
+    <label for="PHNO">CONTACT NUMBER :  </label>
+    <input type="tel" id ="PHNO" placeholder="9121xxxxxxx" pattern="[0-9]{10}"required>
+    <br><br>
+    <label for="MAIL">EMAIL ID :</label>
+    <input type="email" name="MAIL" id="MAIL" required placeholder="YAXXX@GMAIL.COM"> <br><br>
+    <label for="loca"> PREFFERED LOCATION</label>
+     <select name="location" id="loca" required placeholder="LOCATION">
+      <option value="HYDERABAD" >HYDERABAD</option>
+      <option value="BANGALORE">BANGALORE</option>
+      <option value="MUMBAI">MUMBAI</option>
+      <option value="PUNE">PUNE</option>
+      <option value="DELHI">DELHI</option>
+
+     </select> 
+
+    
+
+
+
+    <br>
+    <center><button>submit</button></center>
+    
+  </form>
+  
 </body>
 </html>
